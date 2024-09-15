@@ -3,6 +3,14 @@ body{
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: #4f98ae;
+
+    cursor: url('cursor1.png'), auto;
+}
+
+a:hover {
+    cursor: url('cursor2.png'), pointer;
+    font-weight: bold;
 }
 
 
@@ -39,6 +47,7 @@ header {
 }
 
 .navbar a.active{
+    font-weight: bold;
     text-decoration: underline;
 }
 
