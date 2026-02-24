@@ -1,0 +1,643 @@
+@import '../stylesheets/main.scss';
+
+h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: $small-device) {
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $extra-small-font-size;
+    }
+    h1 {
+        font-size: $large-font-size;
+        line-height: 1.2;
+        padding: 1.5vh 0;
+        font-weight: 600;
+        &.title {
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-size: $extra-large-font-size;
+        }
+    }
+    h2 {
+        line-height: 1.2;
+        padding: 1.5vh 0;
+        font-weight: 600;
+        font-size: $medium-font-size;
+    }
+    h3 {
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 1.5vh 0;
+        font-size: $small-medium-font-size;
+    }
+}
+
+
+@media screen and (min-width: $small-device) {
+    .container {
+        padding-right: calc(8.5vw - (100vw - 100%));
+        padding-left: 8.5vw;
+    }
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $small-font-size;
+    }
+    h1 {
+        font-size: $large-font-size;
+        line-height: 1.2;
+        padding: 2vh 0;
+        font-weight: 600;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-size: $extra-large-font-size;
+        }
+    }
+    h2 {
+        line-height: 1.2;
+        padding: 2vh 0;
+        font-weight: 600;
+        font-size: $medium-font-size;
+    }
+    h3 {
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 2vh 0;
+        font-size: $small-medium-font-size;
+    }
+}
+
+@media screen and (min-width: $medium-device) {
+    .container {
+        padding-right: calc(12vw - (100vw - 100%));
+        padding-left: 12vw;
+    }
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $small-medium-font-size;
+    }
+
+    h1 {
+        font-size: $large-font-size;
+        line-height: 1.2;
+        padding: 1vh 0;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-size: $extra-large-font-size;
+        }
+    }
+    h2 {
+        padding: 1vh 0;
+        font-size: $medium-font-size;
+    }
+    h3 {
+        padding: 1vh 0;
+        font-size: $small-medium-font-size;
+    }
+}
+
+@media screen and (min-width: $large-device) {
+    .container {
+        padding-right: calc(15vw - (100vw - 100%));
+        padding-left: 15vw;
+    }
+    a, p, td, th, tr, code, pre, ol, ul, li, div {
+        font-size: $medium-font-size;
+    }
+
+    h1 {
+        font-size: $extra-large-font-size;
+        line-height: 1.2;
+        padding: 1vh 0;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-size: $extra-extra-large-font-size;
+        }
+    }
+    h2 {
+        padding: 1vh 0;
+        font-size: $large-medium-font-size;
+    }
+    h3 {
+        padding: 1vh 0;
+        font-size: $medium-font-size;
+    }
+}
+
+@media screen and (min-width: $extra-large-device) {
+    .container {
+        padding-right: calc(18vw - (100vw - 100%));
+        padding-left: 18vw;
+    }
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $large-medium-font-size;
+    }
+
+    h1 {
+        font-size: $extra-extra-large-font-size;
+        line-height: 1.2;
+        padding: 1.75vh 0;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-size: $super-large-font-size;
+        }
+    }
+    h2 {
+        padding: 1.5vh 0;
+        font-size: $extra-large-medium-font-size;
+    }
+    h3 {
+        padding: 1.5vh 0;
+        font-size: $large-medium-font-size;
+    }
+}
+
+@media screen and (min-width: $extra-extra-large-device) {
+    .container {
+        padding-right: calc(22vw - (100vw - 100%));
+        padding-left: 22vw;
+    }
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $large-medium-font-size;
+    }
+
+    h1 {
+        font-size: $extra-extra-large-font-size;
+        line-height: 1.2;
+        padding: 1.75vh 0;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-size: $super-large-font-size;
+        }
+    }
+    h2 {
+        padding: 1.5vh 0;
+        font-size: $large-font-size;
+    }
+    h3 {
+        padding: 1.5vh 0;
+        font-size: $medium-font-size;
+    }
+}
+
+
+@media screen and (min-width: $super-large-device) {
+    .container {
+        padding-right: calc(24vw - (100vw - 100%));
+        padding-left: 24vw;
+    }
+
+    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $extra-large-medium-font-size;
+    }
+
+    h1 {
+        font-size: $extra-extra-large-font-size;
+        line-height: 1.2;
+        padding: 1.75vh 0;
+
+        &.title {
+            padding: 0 0 1vh;
+            font-size: $super-large-font-size;
+        }
+    }
+    h2 {
+        padding: 1.5vh 0;
+        font-size: $large-font-size;
+    }
+    h3 {
+        padding: 1.5vh 0;
+        font-size: $large-medium-font-size;
+    }
+}
+
+@media screen and (min-width: $super-super-large-device) {
+    .container {
+        padding-right: calc(32vw - (100vw - 100%));
+        padding-left: 28vw;
+    }
+}
+
+// ====================================== Footer 
+footer {
+    p {
+        font-family: $default-serif;
+    }
+}
+
+/* ======================== Blog ===================== */
+div.container.blog#first-content {
+    div.blog-title {
+        .blog-intro {
+            p.author {
+                padding: 4px 0 10px;
+                font-family: $default-sans;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 1.2;
+                font-size: 85%;
+            }
+        
+            p.abstract {
+                font-family: $default-sans;
+                font-weight: 400;
+                padding: 1vh 0;
+                font-size: 85%;
+                line-height: 1.6;
+            }
+        
+            .info {
+                p {
+                    text-transform: uppercase;
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 85%;
+                }
+            }
+        }
+    }
+}
+
+div.container.blog {
+    p.text{
+            padding: 1.5vh 0;
+            font-family: $default-serif, sans-serif;
+    }
+
+    p.text:last-child {
+        padding-bottom: 0;
+    }
+
+    ul, ol {
+        li {
+            p.text{
+                padding: 0vh 0 1vh 0 !important; 
+            }
+        }
+    }
+
+    p.caption {
+        padding: 1vh 0;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0px;
+        font-size: 70%;
+
+        b {
+            font-weight: 600 !important;
+        }
+    }
+}
+
+
+/* ======================== Button ===================== */
+input[type="submit"], input[type="reset"], input[type="button"],
+button, .button {
+    font-size: 0.65em;
+    font-weight: 500;
+}
+
+/* ======================== Table ===================== */
+table {
+    th, td{
+        b {
+            font-weight: 500;
+        }
+    }
+    thead{
+        font-weight: 500;
+    }
+}
+
+/* ======================== Selection ===================== */
+select {
+    padding:2px 2px;
+}
+
+
+/* ======================== Slider Display ===================== */
+.before figcaption,
+.after figcaption {
+    font-size: 70%;
+}
+
+
+// ====================================== Menu Design
+div.nav-bar {
+    background-color: transparent;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    .nav-container-small {
+        display: none;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 25vw;
+        padding: 1.5em 0px;
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            &#menu-white {
+                ::selection {
+                    color: $black !important;
+                    background: $white !important;
+                }
+            }
+            a {
+                position: relative;
+                display: block; 
+                text-align: center; 
+                text-decoration: none;
+                font-weight: 500;
+                color: inherit;
+                font-size: $large-font-size;
+                font-family: $default-sans, sans-serif;
+                &:hover {
+                    text-decoration: underline;
+                    color: inherit;
+                }
+                &.active {
+                    text-decoration: underline;
+                    color: inherit;
+                }
+            }
+        }
+        
+        .social {
+            display: flex;
+            justify-content: space-between;
+            color: inherit;
+            .icon {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: block; 
+                    text-align: center; 
+                }
+            }
+        }
+    }
+}
+
+.menu-bar {
+    display: inline-block;
+    color: $black;
+    .menu-default {
+        cursor: pointer;
+        padding: 5em 1vh 5em 0vh;
+        width: 36px;
+        height: 36px;
+        outline: none;
+        position: relative;
+        border: none;
+        background: none;
+        svg {
+            width: 200px;
+            height: 50px;
+            stroke: $black;
+            stroke-width: 2px;
+            color: $black;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            display: block;
+            position: absolute;
+            path {
+                transition: stroke-dasharray var(--duration, .85s) var(--easing, ease) var(--delay, 0s), 
+                stroke-dashoffset var(--duration, .85s) var(--easing, ease) var(--delay, 0s);
+                stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+                stroke-dashoffset: var(--offset, 126px);
+                transform: translateZ(0);
+                &:nth-child(2) {
+                    --duration: .7s;
+                    --easing: ease-in;
+                    --offset: 100px;
+                    --array-2: 74px;
+                }
+                &:nth-child(3) {
+                    --offset: 133px;
+                    --array-2: 107px;
+                }
+            }
+        }
+        &.active {
+            svg {
+                path {
+                    --offset: 57px;
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        --delay: .15s;
+                        --easing: cubic-bezier(.2, .4, .2, 1.1);
+                    }
+                    &:nth-child(2) {
+                        --duration: .4s;
+                        --offset: 2px;
+                        --array-1: 1px;
+                    }
+                    &:nth-child(3) {
+                        --offset: 58px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width: $small-device) {
+    #first-content{
+        padding-top: 6em;
+    }
+    div.nav-bar {
+        position: fixed;
+        background-color: white !important;
+        backdrop-filter: none; 
+        .nav-container {
+            display: grid;
+            grid-template-rows: 4fr 1fr;
+            grid-template-columns: 1fr;
+            padding-left: inherit;
+            padding-right: inherit;
+            position: fixed;
+            height: 100%;
+    
+            left: 0;
+            right: 0;
+            align-items: center;
+            // glassy transparent effect
+            background-color: rgba(255, 255, 255, .8);
+            backdrop-filter: blur(10px);     
+
+            // slide in-out transition
+            transform: translateX(-100%);
+            &.slide-in {
+                animation: slide-in 0.6s forwards;
+                &.first {
+                    animation: none !important;
+                }
+            }
+            
+            &.slide-out {
+                animation: slide-out 0.6s forwards;
+            }
+                
+            @keyframes slide-out {
+                100% { transform: translateX(0%); }
+            }
+            
+
+            @keyframes slide-in {
+                0% { transform: translateX(0%); }
+                100% { transform: translateX(-100%); }
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                justify-items: center;
+                align-items: center;
+                a {
+                    color: $black !important;
+                    padding: 4vh 0;
+                    font-size: $large-font-size;
+                    &.active {
+                        color: $black !important;
+                        text-decoration: underline;
+                    }
+                }          
+            }
+            
+            .social {
+                display: flex;
+                justify-content: space-around;
+                .icon {
+                    a {
+                        padding: 1vh;
+                        color: $black !important; 
+                        text-decoration: none;
+                        color: inherit;
+                        font-size: $large-font-size;
+                    }
+                }
+            }
+        }
+        .nav-container-small {
+            display: block;
+            .menu-bar {
+                position: block;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $small-device) {
+    #first-content{
+        padding-top: 8em;
+    }
+    div.nav-bar {
+        .nav-container {
+            padding: 3em 0px;
+            .menu {    
+                a {
+                    font-size: $small-medium-font-size;
+                }     
+                
+            }
+
+            .social {
+                .icon {
+                    a {
+                        font-size: $small-medium-font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium-device) {
+    #first-content{
+        padding-top: 10em;
+    }
+    div.nav-bar {
+        .nav-container {
+            padding: 4em 0px;
+            .menu {
+                a {
+                    font-size: $small-medium-font-size;
+                }                 
+                
+            }
+
+            .social {
+                .icon {
+                    a {
+                        font-size: $small-medium-font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $large-device) {
+    #first-content{
+        padding-top: 12em;
+    }
+    div.nav-bar {
+        .nav-container {
+            padding: 5em 0px;
+
+            .menu {   
+                a {
+                    font-size: $medium-font-size;
+                } 
+            }
+
+            .social {
+                .icon {
+                    a {
+                        font-size: $medium-font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $super-large-device) {
+    #first-content{
+        padding-top: 14em;
+    }
+    div.nav-bar {
+        .nav-container {
+            padding: 6em 0px;
+
+            .menu {   
+                a {
+                    font-size: $large-medium-font-size;
+                } 
+            }
+
+            .social {
+                .icon {
+                    a {
+                        font-size: $large-medium-font-size;
+                    }
+                }
+            }
+        }
+    }
+}
